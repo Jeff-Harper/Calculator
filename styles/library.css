@@ -1,0 +1,22 @@
+.center {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.display-area {
+  margin: var(--size-400);
+}
+
+.btn-new-book {
+  padding: 1rem;
+  font-size: var(--fs-primary-heading);
+}
+
+.book-edit-icon {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+  background-color: red;
+}

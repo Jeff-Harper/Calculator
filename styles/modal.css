@@ -1,0 +1,95 @@
+.modal-form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 100svh;
+
+  background: var(--clr-accent-900);
+  font-size: var(--fs-body-large);
+}
+
+.add-book-form {
+  position: relative;
+  border: 2px solid var(--clr-neutral-900);
+  border-radius: var(--border-radius-medium);
+  background: var(--clr-neutral-100);
+  padding: var(--padding);
+}
+
+.modal-form-title {
+  font-size: var(--fs-primary-heading);
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.modal-form-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: var(--fs-800);
+  font-weight: var(--fw-bold);
+}
+
+[class*="cool-circle-"] {
+  --height: 100px;
+  --width: 100px;
+  box-shadow:
+    6px 10px 3px rgba(9, 14, 29, 0.3) inset,
+    9px 13px 8px rgba(9, 14, 29, 0.3) inset,
+    2px 2px 15px rgba(9, 14, 29, 0.5) inset;
+  position: relative;
+  top: calc(50% - (var(--height) / 2));
+  left: calc(50% - (var(--width) / 2));
+  height: var(--height);
+  width: var(--width);
+}
+
+.cool-circle-100 {
+  background-color: rgba(6, 6, 66, 0.2);
+  --height: calc(var(--height * 1));
+  --width: calc(var(--width * 1));
+}
+.cool-circle-200 {
+  background-color: rgba(6, 6, 66, 0.2);
+  --height: 150px;
+  --width: 150px;
+}
+.cool-circle-300 {
+  background-color: rgba(6, 6, 66, 0.2);
+  --height: 200px;
+  --width: 200px;
+}
+.cool-circle-400 {
+  background-color: rgba(6, 6, 66, 0.2);
+  --height: 250px;
+  --width: 250px;
+}
+.cool-circle-500 {
+  background-color: rgba(6, 6, 66, 0.2);
+  --height: 300px;
+  --width: 300px;
+}
+.cool-circle-600 {
+  background-color: rgba(6, 6, 66, 0.2);
+  --height: 350px;
+  --width: 350px;
+}
+
+.anim-wobble {
+  border-radius: 71% 29% 52% 48% / 72% 39% 61% 28%;
+  animation: wobble 2s linear alternate infinite;
+}
+
+@keyframes wobble {
+  50% {
+    border-radius: 61% 39% 43% 57% / 56% 49% 51% 44%;
+  }
+  100% {
+    border-radius: 31% 69% 22% 78% / 34% 66% 34% 66%;
+  }
+}
